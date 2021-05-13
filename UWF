@@ -1,0 +1,20 @@
+sudo ufw reset
+sudo ufw status
+sudo ufw enable
+sudo ufw disable
+sudo ufw reload
+# default deny rules
+sudo ufw default deny incoming
+sudo ufw default deny outgoing
+# allow rules
+sudo ufw allow 80
+sudo ufw allow 443
+sudo ufw allow 22
+sudo ufw allow 110
+sudo ufw allow 53
+# deny rules
+sudo ufw deny 110
+# delete rules
+sudo ufw delete deny 110
+# verbose status
+sudo ufw status verbose
